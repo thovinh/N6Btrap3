@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap Layout Components</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>2.3 Các thành phần giao diện (Bootstrap Layout Components)</h2>
+
+    <!-- Dropdown Menus -->
+    <h3>Dropdown Menus</h3>
+    <p>Dropdown là một menu thả xuống cho phép người dùng chọn một tùy chọn từ danh sách.</p>
+    <div class="dropdown mb-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Button Groups -->
+    <h3>Button Groups</h3>
+    <p>Button Groups cho phép nhóm các nút lại với nhau để tiết kiệm không gian và tạo sự nhất quán.</p>
+    <div class="btn-group mb-3" role="group">
+        <input type="radio" class="btn-check" id="btnradio1" name="btnradio" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+
+        <input type="radio" class="btn-check" id="btnradio2" name="btnradio" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+    </div>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Buttons with Dropdowns -->
+    <h3>Buttons with Dropdowns</h3>
+    <p>Buttons with Dropdowns cho phép kết hợp nút với menu thả xuống để cung cấp nhiều tùy chọn hơn.</p>
+    <div class="btn-group mb-3">
+        <button type="button" class="btn btn-primary">Action</button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Navigation Elements -->
+    <h3>Navigation Elements</h3>
+    <p>Các phần tử điều hướng giúp người dùng di chuyển giữa các phần khác nhau của trang.</p>
+    <ul class="nav nav-tabs mb-3">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Messages</a>
+        </li>
+    </ul>
+
+    <nav class="nav flex-column mb-3">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Profile</a>
+        <a class="nav-link" href="#">Messages</a>
+    </nav>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Navbar -->
+    <h3>Navbar</h3>
+    <p>Navbar là một thanh điều hướng chính của trang, thường chứa các liên kết và menu.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Breadcrumbs -->
+    <h3>Breadcrumbs</h3>
+    <p>Breadcrumbs giúp người dùng biết vị trí của họ trong cấu trúc trang và dễ dàng quay lại các phần trước đó.</p>
+    <nav aria-label="breadcrumb" class="mb-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+    </nav>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Pagination -->
+    <h3>Pagination</h3>
+    <p>Pagination cho phép người dùng điều hướng qua các trang nội dung, giúp quản lý thông tin dễ dàng hơn.</p>
+    <nav aria-label="Page navigation example" class="mb-3">
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+    </nav>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Labels -->
+    <h3>Labels</h3>
+    <p>Labels là các nhãn nhỏ hiển thị thông tin bổ sung cho người dùng.</p>
+    <span class="badge bg-primary mb-3">New</span>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Badges -->
+    <h3>Badges</h3>
+    <p>Badges là các phần tử nhỏ hiển thị thông tin ngắn gọn, thường được sử dụng để chỉ số lượng hoặc trạng thái.</p>
+    <h1>Example heading <span class="badge bg-secondary">New</span></h1>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Typographic Elements -->
+    <h3>Typographic Elements</h3>
+    <p>Các phần tử kiểu chữ giúp định dạng và làm nổi bật nội dung trên trang.</p>
+    <h3>Hero Unit</h3>
+    <p>Hero Unit là một thành phần lớn, thường được sử dụng để thu hút sự chú ý đến nội dung quan trọng.</p>
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    </div>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <h3>Page Header</h3>
+    <p>Page Header là tiêu đề chính của trang, thường đi kèm với một mô tả ngắn.</p>
+    <h1 class="page-header">Page Header <small>Secondary text</small></h1>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Thumbnails -->
+    <h3>Thumbnails</h3>
+    <p>Thumbnails là các hình ảnh nhỏ hiển thị nội dung, thường được sử dụng để đại diện cho các mục lớn hơn.</p>
+    <div class="row mb-3">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="https://cdn.pixabay.com/photo/2024/01/02/14/58/leaf-8483401_640.jpg" alt="Description of the image">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Alerts -->
+    <h3>Alerts</h3>
+    <p>Alerts là thông báo hiển thị thông tin quan trọng cho người dùng, có thể là cảnh báo, thông báo thành công, hoặc thông báo lỗi.</p>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        A simple primary alert—check it out!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Progress Bars -->
+    <h3>Progress Bars</h3>
+    <p>Progress Bars hiển thị tiến trình của một tác vụ, giúp người dùng theo dõi trạng thái.</p>
+    <div class="progress mb-3">
+        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+    </div>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Media Object -->
+    <h3>Media Object</h3>
+    <p>Media Object cho phép hiển thị nội dung đa phương tiện, như hình ảnh và văn bản, trong một bố cục hợp lý.</p>
+    <div class="media mb-3">
+        <img src="https://cdn.pixabay.com/photo/2024/01/02/14/58/leaf-8483401_640.jpg" alt="Description of the image">
+        <div class="media-body">
+            <h5 class="mt-0">Media heading</h5>
+           ABCDEFG
+        </div>
+    </div>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <!-- Miscellaneous -->
+    <h3>Miscellaneous</h3>
+    <p>Các thành phần khác nhau không thuộc về các loại chính, nhưng vẫn hữu ích trong việc xây dựng giao diện.</p>
+    <h5>Wells</h5>
+    <p>Wells là các khung chứa nội dung, giúp làm nổi bật thông tin quan trọng.</p>
+    <div class="well mb-3">
+        <h5>Well Content</h5>
+        <p>Some content inside a well.</p>
+    </div>
+    <hr> <!-- Đường gạch ngăn cách -->
+
+    <div class="alert alert-info mb-3" role="alert">
+        <h4>Helper Classes</h4>
+        <p>This is a simple alert for helper classes.</p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
